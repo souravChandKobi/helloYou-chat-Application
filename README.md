@@ -3,7 +3,7 @@
 <p align="center">
   <img src="/images/home.png" width="30%" />
   <img src="/images/chat.png" width="30%" />
-  <img src="/images/profile" width="30%" />
+  <img src="/images/profile.png" width="30%" />
 </p>
 
 helloYou! is a real-time chat application built with Flutter and Firebase. It allows users to sign in with their Google account, exchange messages instantly, share images, and receive push notifications. The app is built using Material 3 and focuses on providing a clean, responsive, and user-friendly messaging experience.
@@ -20,6 +20,11 @@ helloYou! is a real-time chat application built with Flutter and Firebase. It al
 * Read receipts
 * Material 3 interface
 * Fast and responsive performance
+
+<p align="center">
+  <img src="/images/login.png" width="30%" />
+  <img src="/images/group.png" width="30%" />
+</p>
 
 ## Tech Stack
 
@@ -79,18 +84,6 @@ flutter run
    * Firebase Storage
    * Firebase Cloud Messaging
 
-## Screenshots
-
-Place your screenshots in a `screenshots` folder.
-
-```text
-screenshots/
-├── login.png
-├── chats.png
-├── group_chat.png
-├── conversation.png
-└── profile.png
-```
 
 ## Planned Features
 
