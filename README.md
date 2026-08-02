@@ -1,8 +1,8 @@
 # helloYou!
 
 <p align="center">
-  <img src="/images/home.png" width="30%" />
-  <img src="/images/chat.png" width="30%" />
+  <img src="/images/home.png" width="25%" />
+  <img src="/images/chat.png" width="25%" />
   <img src="/images/profile.png" width="25%" />
 </p>
 
@@ -22,8 +22,8 @@ helloYou! is a real-time chat application built with Flutter and Firebase. It al
 * Fast and responsive performance
 
 <p align="center">
-  <img src="/images/login.png" width="30%" />
-  <img src="/images/group.png" width="30%" />
+  <img src="/images/login.png" width="25%" />
+  <img src="/images/group.png" width="25%" />
 </p>
 
 ## Tech Stack
