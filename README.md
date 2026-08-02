@@ -36,55 +36,6 @@ helloYou! is a real-time chat application built with Flutter and Firebase. It al
 * Firebase Cloud Messaging (FCM)
 * Google Sign-In
 
-## Getting Started
-
-### Prerequisites
-
-* Flutter SDK
-* Android Studio or Visual Studio Code
-* Firebase project
-* Android emulator or physical device
-
-### Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/souravChandKobi/helloYou.git
-```
-
-Navigate to the project:
-
-```bash
-cd helloYou
-```
-
-Install the dependencies:
-
-```bash
-flutter pub get
-```
-
-Run the application:
-
-```bash
-flutter run
-```
-
-## Firebase Setup
-
-1. Create a Firebase project.
-2. Register your Android application.
-3. Download the `google-services.json` file.
-4. Place the file inside the `android/app/` directory.
-5. Enable:
-
-   * Authentication (Google Sign-In)
-   * Cloud Firestore
-   * Firebase Storage
-   * Firebase Cloud Messaging
-
-
 ## Planned Features
 
 * Voice messages
@@ -95,6 +46,6 @@ flutter run
 
 ## Author
 
-**KobiW**
+**Kobi**
 
 GitHub: https://github.com/souravChandKobi
