@@ -1,0 +1,18 @@
+// NAVIGATOR PUSH AND REMOVE
+Navigator.of(context).pushAndRemoveUntil(
+            SlideFromRightPageRoute(
+              page: GroupChatScreen(group: group),
+              duration: const Duration(milliseconds: 100), // slower
+              reverseDuration: const Duration(milliseconds: 50),
+            ),
+            (route) => route.isFirst,
+          );
+
+// NAVIGATOR
+Navigator.of(context).push(
+              SlideFromRightPageRoute(
+                page: ProfileScreenGroup(group: widget.group),
+                duration: const Duration(milliseconds: 100),
+                reverseDuration: const Duration(milliseconds: 50),
+              ),
+            );

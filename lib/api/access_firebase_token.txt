@@ -1,0 +1,26 @@
+import 'package:googleapis_auth/auth_io.dart';
+
+class AccessFirebaseToken {
+  static String fMessagingScope =
+      "https://www.googleapis.com/auth/firebase.messaging";
+
+  Future<String> getAccessToken() async {
+    final client = await clientViaServiceAccount(
+      ServiceAccountCredentials.fromJson({
+
+
+
+        //ADD THE ServiceAccountCredentials. REMOVED FOR GITHUB!!!!!!!!!
+        //then change the file extension from .txt to .dart
+        
+
+
+
+      }),
+      [fMessagingScope],
+    );
+
+    final accessToken = client.credentials.accessToken.data;
+    return accessToken;
+  }
+}
