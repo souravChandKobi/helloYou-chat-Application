@@ -13,7 +13,7 @@ helloYou! is a real-time chat application built with Flutter and Firebase. It al
 * Google Sign-In authentication
 * Real-time messaging with Cloud Firestore
 * One-to-one and group chats
-* Image sharing using Firebase Storage
+* Image sharing using Cloudinary Storage
 * Push notifications with Firebase Cloud Messaging (FCM)
 * User profiles
 * Online and offline user status
