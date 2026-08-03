@@ -41,7 +41,6 @@ helloYou! is a real-time chat application built with Flutter and Firebase. It al
 * Voice messages
 * Video calling
 * Message reactions
-* Dark mode
 * End-to-end encryption
 
 ## Author
