@@ -3,7 +3,6 @@
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 /// Default [FirebaseOptions] for use with your Firebase apps.
 ///
@@ -15,11 +14,6 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 ///   options: DefaultFirebaseOptions.currentPlatform,
 /// );
 /// ```
-
-
-final firestoreAppId=dotenv.env['firestoreAppId'];
-
-
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
@@ -32,7 +26,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        return ios;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for ios - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
@@ -55,23 +52,11 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static  FirebaseOptions android = FirebaseOptions(
+  static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyBmofzHMrZIngQE91JZobYl-ZSU2fdjLXE',
     appId: '1:962439382171:android:a2356726dd6fd6cc7f723e',
     messagingSenderId: '962439382171',
-    projectId: '$firestoreAppId',
-    storageBucket: '$firestoreAppId.firebasestorage.app',
+    projectId: 'hello-you--chatting-app-59da8',
+    storageBucket: 'hello-you--chatting-app-59da8.firebasestorage.app',
   );
-
-  static  FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDrjAhQpGNib4Upcc6hztxK6XP_-XZWe9M',
-    appId: '1:962439382171:ios:54a57860e611d1697f723e',
-    messagingSenderId: '962439382171',
-    projectId: '$firestoreAppId',
-    storageBucket: '$firestoreAppId.firebasestorage.app',
-    androidClientId: '962439382171-ndfr43g8hmakoio4co9ktup3lc59c6fc.apps.googleusercontent.com',
-    iosClientId: '962439382171-le4qruugiu7b6q3v8kcu7q4119m5ksu9.apps.googleusercontent.com',
-    iosBundleId: 'com.example.ssChat',
-  );
-
 }

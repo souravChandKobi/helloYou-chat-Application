@@ -38,7 +38,7 @@ final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
 /// --------------------- Main Entry Point ---------------------
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await dotenv.load(fileName: "keys.env");
+  // await dotenv.load(fileName: "keys.env");
   await _initializeFirebase();
   await initializeNotifications();
   
